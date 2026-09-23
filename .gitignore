@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# Downloaded CC0 packs — see ASSETS.md for where to get them.
+# Delete these two lines if you'd rather commit the assets.
+public/assets/characters/*.glb
+public/assets/animations/*.glb
+
+# Claude Code local state
+.claude/settings.local.json
+
+# Test output
+/test-results/
+/playwright-report/
+/blob-report/

@@ -1,0 +1,28 @@
+{
+  "name": "big-top-of-the-dead",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clips": "node tools/list-clips.mjs",
+    "audit": "node tools/audit.mjs",
+    "test": "npm run audit && playwright test",
+    "test:smoke": "playwright test",
+    "test:ui": "playwright test --ui",
+    "check": "npm run audit && npm run build"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.14.0",
+    "@recast-navigation/three": "^0.39.0",
+    "recast-navigation": "^0.39.0",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "lil-gui": "^0.19.2",
+    "vite": "^5.4.0"
+  }
+}

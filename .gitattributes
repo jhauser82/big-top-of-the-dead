@@ -1,0 +1,21 @@
+# Normalise line endings so Windows checkouts don't produce whole-file diffs.
+* text=auto eol=lf
+
+*.sh   text eol=lf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# Binary. Never diff or merge these.
+*.glb  binary
+*.gltf binary
+*.fbx  binary
+*.png  binary
+*.jpg  binary
+*.webp binary
+*.wav  binary
+*.mp3  binary
+*.ogg  binary
+*.blend binary
+
+# Keep generated reports out of the diff view on GitHub.
+playwright-report/** linguist-generated=true
